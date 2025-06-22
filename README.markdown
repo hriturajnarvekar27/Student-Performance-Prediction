@@ -99,15 +99,15 @@ The **Student Performance Prediction & CGPA Calculator** is a web-based applicat
    - ![Student Profile Screenshot](https://github.com/hriturajnarvekar27/Student-Performance-Prediction/blob/main/Screenshots/Screenshot%202025-06-22%20194750.png)
      - *Description*: Displays the profile form with fields for name, roll number, and semester grades, plus a green line chart showing grade trends.
 2. **Predict Exam Marks Section**
-   - ![Predict Exam Marks Screenshot](https://github.com/hriturajnarvekar27/Student-Performance-Prediction/blob/main/Screenshots/Screenshot%202025-06-22%20194800.png)
+   - ![Predict Exam Marks Screenshot](https://github.com/hriturajnarvekar27/Student-Performance-Prediction/blob/main/Screenshots/Screenshot%202025-06-22%20194927.png)
      - *Description*: Shows input fields, two gauges (marks and attendance), a feature importance bar chart, and a red line chart for study hours impact.
      - *Note*: Replace with the actual URL or filename of your screenshot for this section.
 3. **Calculate CGPA Section**
-   - ![Calculate CGPA Screenshot](https://github.com/hriturajnarvekar27/Student-Performance-Prediction/blob/main/Screenshots/Screenshot%202025-06-22%20194830.png)
+   - ![Calculate CGPA Screenshot](https://github.com/hriturajnarvekar27/Student-Performance-Prediction/blob/main/Screenshots/Screenshot%202025-06-22%20195204.png)
      - *Description*: Includes a target CGPA input, hypothetical grade form, and a multi-colored bar chart comparing CGPA values.
      - *Note*: Replace with the actual URL or filename of your screenshot for this section.
 4. **Compare Scores Section**
-   - ![Compare Scores Screenshot](https://github.com/hriturajnarvekar27/Student-Performance-Prediction/blob/main/Screenshots/Screenshot%202025-06-22%20194900.png)
+   - ![Compare Scores Screenshot](https://github.com/hriturajnarvekar27/Student-Performance-Prediction/blob/main/Screenshots/Screenshot%202025-06-22%20201708.png)
      - *Description*: Features a line chart for semester grades and bar charts for CGPA, predicted marks, and attendance comparisons.
      - *Note*: Replace with the actual URL or filename of your screenshot for this section.
 
