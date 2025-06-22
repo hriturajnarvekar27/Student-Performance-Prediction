@@ -1,11 +1,11 @@
 # Student Performance Prediction & CGPA Calculator
 
 ## Overview
-The **Student Performance Prediction & CGPA Calculator** is a web-based application developed by me to assist students in tracking their academic performance, predicting exam marks and attendance using machine learning, calculating CGPA goals, and comparing scores with peers. Built with Streamlit, SQL Server (DYPATU_StudentDB), Python, RandomForest models, and Plotly visualizations, this project supports multilingual functionality (English and Marathi).
+The **Student Performance Prediction & CGPA Calculator** is a web-based application developed by me to assist students in tracking their academic performance, predicting exam marks and attendance using machine learning, calculating CGPA goals, and comparing scores with peers. Built with Streamlit, SQL Server (StudentDB), Python, RandomForest models, and Plotly visualizations, this project supports multilingual functionality (English and Marathi).
 
 - **Technologies**: Streamlit, SQL Server, Python, RandomForest, Plotly
-- **Timeline**: June 2025 – Present
-- **Developer**: Ruturaj (sole contributor)
+- **Timeline**: June 2025
+- **Developer**: Hrituraj Narvekar
 
 ## Features
 - **Student Profile Management**: Add, edit, and delete personal details (full name, roll number) and semester grades, with a visual grade trend chart.
@@ -18,7 +18,7 @@ The **Student Performance Prediction & CGPA Calculator** is a web-based applicat
 - `app.py`: Main application code with Streamlit UI and database integration.
 - `languages.py`: Dictionary containing text translations for English and Marathi.
 - `models/`: Directory with pre-trained models (`exam_model.pkl`, `attendance_model.pkl`, `scaler_exam.pkl`).
-- `database.sql`: SQL script to create the `DYPATU_StudentDB` schema.
+- `database.sql`: SQL script to create the `StudentDB` schema.
 - `generate_data.py`: Script to generate synthetic student data for testing.
 - `train_models.py`: Script to train the RandomForest models with sample data.
 - `test_app.py`: Unit tests for predictions and database operations.
@@ -51,13 +51,13 @@ The **Student Performance Prediction & CGPA Calculator** is a web-based applicat
      ```
 3. **Set Up Database**:
    - Install SQL Server and configure it with a local instance (e.g., `localhost`).
-   - Create the `DYPATU_StudentDB` database:
+   - Create the `StudentDB` database:
      ```sql
-     CREATE DATABASE DYPATU_StudentDB;
+     CREATE DATABASE StudentDB;
      ```
    - Run `database.sql` to set up tables:
      ```bash
-     sqlcmd -S localhost -U student_app_user -P Student@2025! -d DYPATU_StudentDB -i database.sql
+     sqlcmd -S localhost -U student_app_user -P Student@2025! -d StudentDB -i database.sql
      ```
    - Update the connection string in `app.py` (in `get_db_connection()`) with your SQL Server credentials if different.
 4. **Generate Sample Data** (Optional):
@@ -111,7 +111,6 @@ The **Student Performance Prediction & CGPA Calculator** is a web-based applicat
      - *Description*: Features a line chart for semester grades and bar charts for CGPA, predicted marks, and attendance comparisons.
      - *Note*: Replace with the actual URL or filename of your screenshot for this section.
 
-*Note*: The provided URL (Screenshot 2025-06-22 194750.png) is used for the Student Profile section. Upload additional screenshots for the other sections to the `Screenshots/` directory on GitHub (e.g., `Screenshot 2025-06-22 194800.png`, `Screenshot 2025-06-22 194830.png`, `Screenshot 2025-06-22 194900.png`) and update the URLs accordingly. Ensure the filenames match the timestamps or rename them for clarity (e.g., `predict_exam_marks.png`).
 
 ## Testing
 - Run tests with:
@@ -120,7 +119,7 @@ The **Student Performance Prediction & CGPA Calculator** is a web-based applicat
   ```
 - Tests validate:
   - Prediction accuracy within expected ranges (0-100 for marks, 0-100 for attendance).
-  - Database operations (insert, update, delete in `DYPATU_StudentDB`).
+  - Database operations (insert, update, delete in `StudentDB`).
   - Language switching functionality.
 - Check `app.log` for errors during testing.
 
@@ -146,7 +145,7 @@ The **Student Performance Prediction & CGPA Calculator** is a web-based applicat
 ### Cloud Deployment
 - **Streamlit Community Cloud**:
   - Push to GitHub, connect to Streamlit Cloud.
-  - Use Azure SQL Database for `DYPATU_StudentDB` with environment variables for credentials.
+  - Use Azure SQL Database for `StudentDB` with environment variables for credentials.
 - **Requirements**:
   - Update `requirements.txt` for cloud compatibility (e.g., add `pyodbc` with proper drivers).
 
@@ -156,5 +155,3 @@ The **Student Performance Prediction & CGPA Calculator** is a web-based applicat
 - Integrate real-time data from an educational API.
 - Enhance UI with more interactive elements (e.g., sliders for predictions).
 
-## License
-[MIT License](LICENSE) (create a `LICENSE` file with MIT terms if not present).
